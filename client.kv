@@ -1,0 +1,9 @@
+#:kivy 1.9.0
+
+<Character>:
+    pos: self.position_x * 32, (self.map_height * 2 - self.position_y) * 32
+    canvas:
+        Rectangle:
+            pos: root.pos
+            size: 32, 40
+            source: root.source
